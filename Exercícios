@@ -1,0 +1,126 @@
+//Exercício 1
+
+import java.util.Scanner;
+class Main {  
+  public static void main(String args[]) { 
+    Scanner scan = new Scanner(System.in);
+
+    boolean cheack = false;
+
+    do{
+    System.out.println("Insira seu nome: ");
+    String nome = scan.next();
+    
+    System.out.println("Insira sua senha: ");
+    String senha = scan.next();
+
+      if(nome.equalsIgnoreCase (senha)){
+        System.out.println("Usuario e senha são iguais, digite novamente");
+       
+      }else{
+        System.out.println("Usuario e senha validas !");
+         cheack = true;
+      }
+    } while (!cheack);
+  } 
+}
+
+//Exercício 2
+
+	import java.util.Scanner;
+	
+	public class Math {
+
+	  public static void main(String args[]) { 
+	   Scanner scan = new Scanner(System.in);
+
+	    boolean valorValido = false;
+
+	    System.out.println("Digite um valor: ");
+	    int valor = scan.nextInt();
+
+	do{
+	    
+	    if (valor>= 0 && valor<=10){
+	    System.out.println("valor valido");
+	      valorValido = true;
+	      
+	    } else{
+	      System.out.println("Valor invalido, tente novamente! ");
+	      
+	    } 
+	} while(!valorValido);  
+	  
+	
+	  } 
+	}
+  
+  ////Exercício 3
+  
+  import java.util.Scanner;
+
+class Main {  
+ public static void main(String args[]) { 
+ Scanner scan = new Scanner(System.in);
+ boolean check = false;
+
+    do{
+    System.out.println("Digite seu nome:");
+    String nome = scan.next();
+    if(nome.length() >= 3){
+    check = true;
+    }else{
+    System.out.println("Apenas nomes com no mínimo 3 caracteres serão validos!");
+      
+    }
+    }while(!check);
+    
+    do{
+    System.out.println("Digite sua idade: ");
+    int idade = scan.nextInt();
+    if (idade >= 0 && idade<=150){
+    check = true;
+    }else{
+    System.out.println("Digite uma idade valida de 0 a 150 anos");
+    
+    }
+    }while(!check);
+    
+    do{
+    System.out.println("Qual é seu salário? ");
+    int salario = scan.nextInt();
+    if (salario > 0){
+        check = true;
+    }else{
+    System.out.println("Salário invalido");
+      
+    }
+    }while(!check); 
+    
+    do{
+    
+    System.out.println("Sexo: 'f'(Feminino) ou 'm' (Masculino)");
+    String sexo = scan.next();
+    if (sexo.equalsIgnoreCase("f") || 
+        sexo.equalsIgnoreCase("m")){
+        check=true;
+    }else{
+    System.out.println("Selecione apenas F ou M");
+      
+    }
+    }while(!check);
+  
+    System.out.println("Estado civil: 's', 'c', 'd' ou 'v' ");
+    String civil = scan.next();
+    if (civil.equalsIgnoreCase("s") || 
+    civil.equalsIgnoreCase("c") || 
+    civil.equalsIgnoreCase("d") || 
+    civil.equalsIgnoreCase("v")){
+       check=true;
+    }else{
+    System.out.println("Selecione apenas's', 'c', 'd' ou 'v' ");
+  
+    }while(!check);
+  } 
+}
+	
