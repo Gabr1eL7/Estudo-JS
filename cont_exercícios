@@ -1,0 +1,117 @@
+import java.util.Scanner;
+
+class Main {  
+  public static void main(String args[]) {
+  Scanner scan = new Scanner(System.in);
+    
+    System.out.println("Digite um numero de 1 a 7: "); 
+    int semana = scan.nextInt();
+
+    switch(semana){
+
+        case  1 : System.out.println("Domingo"); break;
+        case  2 : System.out.println("Segunda"); break;
+        case  3 : System.out.println("Terça"); break;
+        case  4 : System.out.println("Quarta"); break;
+        case  5 : System.out.println("Quinta"); break;
+        case  6 : System.out.println("Sexta"); break;
+        case  7 : System.out.println("Sabado"); break;
+
+        default : System.out.println("Valor invalido");
+    }
+    
+    
+  } 
+}
+
+//
+
+import java.util.Scanner;
+
+class Main {  
+  public static void main(String args[]) { 
+    Scanner scan = new Scanner(System.in);
+
+    
+    System.out.println("Informe seu salário: "); 
+    Int sal = scan.nextInt();
+
+      if (sal <= 280){
+      int aumento = sal*0.20;
+      int atual = aumento + sal;
+      System.out.println("Seu antigo salario era :" + sal + "recebeu aumento de 20%, no valor de: "+ aumento+ "e seu novo salário é de: " + atual);
+    }
+
+    else if (sal > 280 $$ sal < 700){
+      int aumento = sal*0.15;
+      int atual = aumento + sal;
+      System.out.println("Seu antigo salario era :" + sal + "recebeu aumento de 15%, no valor de: "+ aumento+ "e seu novo salário é de: " + atual);
+    }
+
+     else if (sal > 700 $$ sal < 1500){
+      int aumento = sal*0.10;
+      int atual = aumento + sal;
+      System.out.println("Seu antigo salario era :" + sal + "recebeu aumento de 10%, no valor de: "+ aumento+ "e seu novo salário é de: " + atual);
+    }
+     else if (sal > 1500){
+      int aumento = sal*0.05;
+      int atual = aumento + sal;
+      System.out.println("Seu antigo salario era :" + sal + "recebeu aumento de 5%, no valor de: "+ aumento+ "e seu novo salário é de: " + atual);
+    }
+    
+    
+  } 
+}
+
+\\
+
+
+import java.util.Scanner;
+
+class Main {  
+  public static void main(String args[]) { 
+    Scanner scan = new Scanner(System.in);
+    
+    System.out.println("Qual turno você estuda? "); 
+    String turno = scan.next();
+
+switch(turno){
+    case "m":
+    case "M": System.out.println("Bom Dia!"); break;
+    case "v":
+    case "V": System.out.println("Boa Tarde!"); break;
+    case "n":
+    case "N": System.out.println("Boa Noite!"); break;
+    default : System.out.println("Valor invalido!");
+}
+ 
+  } 
+}
+
+//
+
+import java.util.Scanner;
+
+class Main {  
+  public static void main(String args[]) { 
+    Scanner scan = new Scanner(System.in);
+    
+    System.out.println("Qual turno você estuda? "); 
+    String turno = scan.next();
+
+ if(turno.equalsIgnoreCase("m")){
+   System.out.println("Bom dia !");
+ }
+    
+   else if(turno.equalsIgnoreCase("v")){
+     System.out.println("Boa tarde !");
+   }
+    
+    else if(turno.equalsIgnoreCase("n")){
+     System.out.println("Boa noite !");
+   }else{
+      System.out.println("Valor invalido");
+   }
+ 
+  } 
+}
