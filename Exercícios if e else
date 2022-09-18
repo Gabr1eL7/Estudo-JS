@@ -1,0 +1,87 @@
+* Os exercícios foram retirados do site: --> https://professor.luzerna.ifc.edu.br/marcelo-cendron/wp-content/uploads/sites/40/2017/02/lista-exercicios-if-else.pdf
+
+**RESOLUÇÃO:
+
+1- import java.util.Scanner;
+
+class Main {  
+  public static void main(String args[]) { 
+Scanner scan = new Scanner(System.in);
+
+    System.out.println("Digite um valor: ");
+    int num1 = scan.nextInt();
+
+    System.out.println("Digite outro valor: ");
+    int num2 = scan.nextInt();
+
+    if(num1>=num2){
+      System.out.println("O primeiro numero é maior " + num1);
+    }else if(num2>=num1){
+      System.out.println("O segundo numero é maior " + num2);
+    }
+    
+  } 
+}
+
+2- import java.util.Scanner;
+
+class Main {  
+  public static void main(String args[]) { 
+Scanner scan = new Scanner(System.in);
+
+    System.out.println("Digite sua idade: ");
+    int idade = scan.nextInt();
+
+    //Considerando a idade superior OU igual a 18 anos
+if(idade>=18){
+  System.out.println("Pode votar");
+  
+}else if (idade<18){
+  System.out.println("NÃO pode votar, daqui " + (18 - idade) + " anos terá idade para voto!");
+}
+  } 
+}
+
+
+3- import java.util.Scanner;
+
+class Main {  
+  public static void main(String args[]) { 
+Scanner scan = new Scanner(System.in);
+
+    System.out.println("Digite sua senha: ");
+    String senha = scan.next();
+
+    if(senha.equals("1234")){
+      System.out.println("ACESSO	PERMITIDO");
+      
+    }else{
+      System.out.println("ACESSO	NEGADO!");
+    }
+    
+
+  } 
+}
+
+4 - import java.util.Scanner;
+
+class Main {  
+  public static void main(String args[]) { 
+Scanner scan = new Scanner(System.in);
+
+    System.out.println("Digite a quantidade de MAÇÃS: ");
+    int qtd = scan.nextInt();
+
+    if(qtd<12){
+      Double i = qtd * 0.30;
+      System.out.println("Levando " + qtd + " maçãs");
+      System.out.println("Total: R$ " + i );
+    }else if(qtd>=12){
+      Double i = qtd * 0.25;
+      System.out.println("Levando " + qtd + " maçãs");
+      System.out.println("Total: R$ " + i );
+    }
+
+
+  } 
+}
