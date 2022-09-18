@@ -85,3 +85,74 @@ Scanner scan = new Scanner(System.in);
 
   } 
 }
+
+5 - /* Ordem crescente usando apenas if e else foi necessario pensar nas 6 possibilidades possiveis visto que tinhamos 3 respostas que poderiam estar
+em ordens diferentes ou 3! = 3*2*1. A resolução poderia ser facilitada usando loop como While ou for.
+
+Possibilidades:
+* 1 2 3
+* 1 3 2
+* 2 1 3
+* 2 3 1
+* 3 2 1
+* 3 1 2
+*/
+
+
+import java.util.Scanner;
+
+class Main {  
+  public static void main(String args[]) { 
+Scanner scan = new Scanner(System.in);
+
+    System.out.println("Digite o 1º valor: ");
+    int num1 = scan.nextInt();
+
+    System.out.println("Digite o 2º valor: ");
+    int num2 = scan.nextInt();
+
+     System.out.println("Digite o 3º valor: ");
+    int num3 = scan.nextInt();
+
+    System.out.println("");
+  
+    if(num3>num2 && num2>num1){
+      System.out.println("1º caso"); 
+      System.out.println(num1);
+      System.out.println(num2);
+      System.out.println(num3);
+    }else if(num2>num3 && num3>num1){
+      System.out.println("3º caso");
+      System.out.println(num1);
+      System.out.println(num3);
+      System.out.println(num2);
+      
+    }else if(num3>num1 && num1>num2){
+      System.out.println("4º caso");
+      System.out.println(num2);
+      System.out.println(num1);
+      System.out.println(num3);
+      
+    }else if(num2>num1 && num1>num3){
+      System.out.println("5º caso");
+      System.out.println(num3);
+      System.out.println(num1);
+      System.out.println(num2);
+      
+    }else if(num1>num3 && num3>num2){
+      System.out.println("6º caso");
+      System.out.println(num2);
+      System.out.println(num3);
+      System.out.println(num1);
+      
+    }
+    else{
+      System.out.println("2º caso"); 
+      System.out.println(num3);
+      System.out.println(num2);
+      System.out.println(num1);
+    }
+    
+ } 
+    
+}
