@@ -1,0 +1,15 @@
+// random - Números Aleatórios
+class Main {  
+  public static void main(String args[]) { 
+    //numero aleatório
+    System.out.println(Math.random()); 
+    //numero inteiro aleatório
+    System.out.println(Math.floor(Math.random()*100));
+    //numero aleatorio de 1 a 100(decimal)
+    System.out.println((Math.random()*100)+1);
+    //numero aleatorio de 1 a 3 (inteiro);
+    int inteiroAleatorio = (int) (Math.random()*3)+1;
+    System.out.println(inteiroAleatorio);
+
+  } 
+}
